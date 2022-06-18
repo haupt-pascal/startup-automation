@@ -4,14 +4,15 @@ import time
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
-downloads = os.path.join('C:\\', 'Users', os.getlogin(), 'Downloads\\')
-doc_destination = os.path.join('C:\\', 'Users', os.getlogin(), 'Documents', 'Download-Automation', 'Documents\\')
-ppt_destination = os.path.join('C:\\', 'Users', os.getlogin(), 'Documents', 'Download-Automation', 'PowerPoint\\')
-zip_destination = os.path.join('C:\\', 'Users', os.getlogin(), 'Documents', 'Download-Automation', 'Archives\\')
-img_destination = os.path.join('C:\\', 'Users', os.getlogin(), 'Documents', 'Download-Automation', 'Images\\')
-ins_destination = os.path.join('C:\\', 'Users', os.getlogin(), 'Documents', 'Download-Automation', 'Installer\\')
-sys_destination = os.path.join('C:\\', 'Users', os.getlogin(), 'Documents', 'Download-Automation', 'System-Files\\')
-web_destination = os.path.join('C:\\', 'Users', os.getlogin(), 'Documents', 'Download-Automation', 'Website-Files\\')
+username = os.getlogin()
+downloads = os.path.join('C:\\', 'Users', username, 'Downloads\\')
+doc_destination = os.path.join('C:\\', 'Users', username, 'Documents', 'Download-Automation', 'Documents\\')
+ppt_destination = os.path.join('C:\\', 'Users', username, 'Documents', 'Download-Automation', 'PowerPoint\\')
+zip_destination = os.path.join('C:\\', 'Users', username, 'Documents', 'Download-Automation', 'Archives\\')
+img_destination = os.path.join('C:\\', 'Users', username, 'Documents', 'Download-Automation', 'Images\\')
+ins_destination = os.path.join('C:\\', 'Users', username, 'Documents', 'Download-Automation', 'Installer\\')
+sys_destination = os.path.join('C:\\', 'Users', username, 'Documents', 'Download-Automation', 'System-Files\\')
+web_destination = os.path.join('C:\\', 'Users', username, 'Documents', 'Download-Automation', 'Website-Files\\')
 
 class Watcher():
     DIRECTORY_TO_WATCH = downloads

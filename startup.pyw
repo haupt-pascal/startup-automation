@@ -2,7 +2,6 @@ from pynput.keyboard import Key, Listener
 import subprocess
 import os
 
-
 def on_press(key):
     if key == Key.pause:
         print("alright, let's start that shit")
